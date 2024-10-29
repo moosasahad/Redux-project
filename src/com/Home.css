@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 .seconddiv{
     width: 50%;
@@ -34,6 +35,8 @@
 .itemlist{
     
     display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
     justify-content: space-between;
     margin: auto;
     padding: 5px;
