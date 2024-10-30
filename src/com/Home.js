@@ -12,12 +12,14 @@ function Home() {
     const editedid = useSelector((state)=>state.todo.editedid)
   return (
     <div className='maindiv'>
+        
      <div className='seconddiv'>
-        <input value={inputvalue} onChange={inputbar} type="text" />
+     <h1>Todo App</h1>
+       <input value={inputvalue} onChange={inputbar} type="text" />
         {
-            !editedid ? (<button onClick={()=>dispatch(addbutton())}>Add</button>)
+            !editedid ? (<button className='buteninput' onClick={()=>dispatch(addbutton())}>Add</button>)
             :
-            (<button onClick={()=>dispatch(saveedits())}>save</button>)
+            (<button style={{backgroundColor:"green",color:"#fff"}} className='buteninput' onClick={()=>dispatch(saveedits())}>save</button>)
         }
      
             <div className='todolist'>
